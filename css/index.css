@@ -1,21 +1,50 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
 header {
-    height: 30px;
-    background-color: #1b2d1b;
+    height: 40px;
+    background-color: #131713;
     color: #fff;
 }
 
 header h1 {
-    font-size: 1.5em;
+    font-size: 1.9em;
     margin: 5.5px 0;
     display: inline-block;
 }
 
 .subtitulo {
-    font-size: 2em;
-    border-bottom: .5px solid rgba(0, 0, 0, 0.281);
+    font-size: 2.4em;
+    margin-top: 0.2em;
+    padding: 17px 0;
+    border-bottom: .5px solid rgba(0, 0, 0, 0.5);
+}
+
+/*Tabela pacientes*/
+
+.tabela-pacientes,
+thead,
+th,
+tr,
+td {
+    margin-top: 1em;
+    border: 2px solid rgba(0, 0, 0, 0.281);
+    text-align: center;
+    padding: .4em;
+}
+
+th {
+    background-color: #73737330;
+    font-weight: bold;
+}
+
+.tabela-pacientes {
+    width: 100%;
 }
