@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Calculo IMC</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
 </head>
@@ -16,8 +16,8 @@
             <h1>Calculo de IMC</h1>
         </div>
     </header>
-    <main class="container">
-        <section class="tabela">
+    <main>
+        <section class="tabela container">
             <h2 class="subtitulo">Pacientes</h2>
             <table class="tabela-pacientes">
                 <thead>
@@ -45,15 +45,53 @@
                     </tr>
                     <tr class="paciente">
                         <td class="td-nome">Bruno</td>
-                        <td class="td-peso">67</td>
+                        <td class="td-peso">900</td>
                         <td class="td-altura">1.75</td>
                         <td class="td-gordura">34</td>
+                        <td class="td-imc"></td>
+                    </tr>
+                    <tr class="paciente">
+                        <td class="td-nome">Isabela</td>
+                        <td class="td-peso">90</td>
+                        <td class="td-altura">2</td>
+                        <td class="td-gordura">34</td>
+                        <td class="td-imc"></td>
+                    </tr>
+                    <tr class="paciente">
+                        <td class="td-nome">João</td>
+                        <td class="td-peso">90</td>
+                        <td class="td-altura">1.90</td>
+                        <td class="td-gordura">17</td>
                         <td class="td-imc"></td>
                     </tr>
                 </tbody>
             </table>
         </section>
+
+        <section class="adicionar-paciente container">
+            <h2 class="subtitulo">Adicionar paciente</h2>
+            <form class="form-adiciona">
+                <div class="grupo" id="nome">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite o peso do paciente">
+                </div>
+                <div class="grupo">
+                    <label for="peso">Peso:</label>
+                    <input type="text" name="peso" id="peso" placeholder="Digite o peso em Kg do paciente">
+                </div>
+                <div class="grupo">
+                    <label for="altura">Altura:</label>
+                    <input type="text" name="altura" id="altura" placeholder="Digite a altura do paciente">
+                </div>
+                <div class="grupo">
+                    <label for="gordura">Gordura:</label>
+                    <input type="text" name="gordura" id="gordura" placeholder="Digite a gordura do paciente">
+                </div>
+                <button class="botao">Adicionar</button>
+            </form>
+        </section>
     </main>
+    <script src="js/calculo-imc.js"></script>
 </body>
 
 </html>
