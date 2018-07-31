@@ -121,3 +121,12 @@ td {
 .paciente-invalido {
     background-color: lightcoral;
 }
+
+.lista-de-erros {
+    margin-top: 20px;
+}
+
+.peso-ou-altura-invalido {
+    font-size: 1.5em;
+    color: red;
+}
