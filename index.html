@@ -19,6 +19,10 @@
     <main>
         <section class="tabela container">
             <h2 class="subtitulo">Pacientes</h2>
+            <div class="filtro">
+                <label for="filtro">Filtro</label>
+                <input type="text" name="filtro" id="filtro" placeholder="Filtrar por nome">
+            </div>
             <table class="tabela-pacientes">
                 <thead>
                     <th>Nome</th>
@@ -69,10 +73,10 @@
         </section>
 
         <section class="adicionar-paciente container">
+            <h2 class="subtitulo">Adicionar paciente</h2>
             <div class="lista-de-erros">
                 <ul id="erros"></ul>
             </div>
-            <h2 class="subtitulo">Adicionar paciente</h2>
             <form class="form-adiciona">
                 <div class="grupo" id="nome">
                     <label for="nome">Nome:</label>
@@ -97,6 +101,7 @@
     <script src="js/calculo-imc.js"></script>
     <script src="js/adiciona-paciente.js"></script>
     <script src="js/remove-paciente.js"></script>
+    <script src="js/filtro.js"></script>
 </body>
 
 </html>

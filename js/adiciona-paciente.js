@@ -82,18 +82,22 @@ function validaPaciente(pesoValido, alturaValida) {
 }
 
 function mostraErro(erros) {
-    let listaErros = document.querySelector('#erros');
+    let div = document.querySelector('.lista-de-erros');
+    let ulErros = document.createElement('ul');
     erros.forEach(erro => {
         var li = document.createElement('li');
         li.classList.add('peso-ou-altura-invalido');
         li.textContent = erro;
-        listaErros.appendChild(li);
+        ulErros.appendChild(li);
+        div.appendChild(ulErros);
     });
 
-    return listaErros;
+    return ulErros;
 }
 
 
 function removeErros(listaErros) {
-    listaErros.remove();
+    let listaFilhos = listaErros;
+    let filhosLista = listaErros.querySelectorAll('li');
+    listaFilhos.remove(filhosLista);
 }

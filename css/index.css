@@ -35,7 +35,6 @@ thead,
 th,
 tr,
 td {
-    margin-top: 1em;
     border: 2px solid rgba(0, 0, 0, 0.281);
     text-align: center;
     padding: .4em;
@@ -94,6 +93,10 @@ td {
     display: block;
 }
 
+.botao:active {
+    transform: translateY(2px);
+}
+
 /*Mobile*/
 
 @media(max-width:1031px) {
@@ -123,15 +126,33 @@ td {
 }
 
 .lista-de-erros {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .peso-ou-altura-invalido {
-    font-size: 1.5em;
-    color: red;
+    font-size: 1em;
+    color: lightcoral;
 }
 
 .fade-out {
     transition: .5s;
     opacity: 0;
+}
+
+/*filtro*/
+
+.filtro {
+    width: 100%;
+    margin: 1em 0;
+}
+
+.filtro input {
+    width: 99.4%;
+    padding: 1px;
+    margin-top: 3px;
+}
+
+.invisivel {
+    transition: .5s;
+    display: none;
 }

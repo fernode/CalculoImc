@@ -8,7 +8,6 @@ tabela.addEventListener('dblclick', (event) => {
     }, 500);
 })
 
-
 function removePaciente(alvo) {
     alvo.remove();
 }
